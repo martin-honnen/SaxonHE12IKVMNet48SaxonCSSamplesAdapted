@@ -1719,7 +1719,7 @@ namespace SaxonHE12IKVMNet48SaxonCSSamplesAdapted
 
         public override net.sf.saxon.value.SequenceType getResultType(net.sf.saxon.value.SequenceType[] starr)
         {
-            return net.sf.saxon.value.SequenceType.makeSequenceType(BuiltInAtomicType.DOUBLE, StaticProperty.ALLOWS_ZERO_OR_MORE);//net.sf.saxon.value.SequenceType.OPTIONAL_DOUBLE;
+            return net.sf.saxon.value.SequenceType.makeSequenceType(BuiltInAtomicType.DOUBLE, StaticProperty.ALLOWS_ZERO_OR_ONE);//net.sf.saxon.value.SequenceType.OPTIONAL_DOUBLE;
         }
 
         public override ExtensionFunctionCall makeCallExpression()
@@ -1814,7 +1814,7 @@ namespace SaxonHE12IKVMNet48SaxonCSSamplesAdapted
 
         public override net.sf.saxon.value.SequenceType getResultType(net.sf.saxon.value.SequenceType[] starr)
         {
-            return net.sf.saxon.value.SequenceType.makeSequenceType(BuiltInAtomicType.STRING, StaticProperty.ALLOWS_ZERO_OR_MORE);
+            return net.sf.saxon.value.SequenceType.makeSequenceType(BuiltInAtomicType.STRING, StaticProperty.ALLOWS_ZERO_OR_ONE);
         }
 
         public override ExtensionFunctionCall makeCallExpression()
@@ -1928,7 +1928,7 @@ namespace SaxonHE12IKVMNet48SaxonCSSamplesAdapted
 
             public net.sf.saxon.s9api.SequenceType getResultType()
             {
-                return net.sf.saxon.s9api.SequenceType.makeSequenceType(net.sf.saxon.s9api.ItemType.DOUBLE, OccurrenceIndicator.ZERO_OR_MORE);
+                return net.sf.saxon.s9api.SequenceType.makeSequenceType(net.sf.saxon.s9api.ItemType.DOUBLE, OccurrenceIndicator.ZERO_OR_ONE);
             }
         }
     }
